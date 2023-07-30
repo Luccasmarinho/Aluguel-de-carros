@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    
+}
+
+
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: darkblue;
+    padding: 18px;
+    z-index: 1;
+
+}
+
+header h2 {
+    color: white;
+    margin-left: 20%;
+    text-shadow: 1px 1px 8px black;
+    text-transform: uppercase;
+    
+}
+
+main {
+    width: 100%;
+}
+
+.banner {
+    height: 500px;
+    background-image: url('../img/capa.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    
+    
+}
+
+.banner::before {
+    content: '';
+    background: linear-gradient(to bottom, rgba(0, 0, 139, 0.634), rgba(0, 0, 139, 0.067));
+    width: 100%;
+    height: 200px;
+    position: absolute;
+}
+
+.banner h2 {
+    color: white;
+    text-shadow: 1px 1px 8px black;
+    margin-right: 20%;
+    font-size: 2rem;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.banner h2:first-child {
+    margin-top: 5%;
+}
+
+.sobre {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sobre h3 {
+    font-size: 1.5rem;
+    margin-top: 8%;
+}
+
+.sobre p {
+    width: 100%;
+}
+
+.container-cards {
+    width: 100%;
+   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.cards {
+    height: 340px;
+    width: 280px;
+    background: linear-gradient( to bottom, #bdb9b95f, white);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.img-card {
+    width: 100%;
+    background: linear-gradient(to bottom, darkblue, #00008b6f, white);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.cards img {
+    height: 150px;
+    width: 100%;
+    border-bottom: 1px solid rgba(136, 135, 135, 0.248);
+    
+    
+    
+}
+
+.text-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.cards h4 {
+    text-align: center;
+    color: darkblue;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.294);
+    padding: 8px;
+    
+    
+}
+
+
+.cards p {
+    font-size: 1rem;
+    color: rgba(128, 128, 128, 0.837);
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+
+
+
+
+.btn-card {
+    border: 1px solid darkblue;
+    color: darkblue;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    outline: none;
+    transition: .4s;
+}
+
+.btn-card:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.destaque-p {
+    border-left: 2px solid darkblue;
+    padding: 5px;
+    
+}
+
+.destaque-p p {
+    font-size: 1.1rem;
+}
+
+.contato-blue {
+    height: 130px;
+    background-color: darkblue;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contato-blue2 {
+    height: 50%;
+    background-color: rgb(0, 0, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.47);
+    border-top: 1px solid rgba(255, 255, 255, 0.47);
+    padding: 5ox 0;
+}
+
+.contato-blue2 h2 {
+    text-align: center;
+    color: white;
+    font-size: 2.2rem;
+    text-shadow: 1px 1px 5px black;
+}
+
+.analise-cadastro {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.analise-cadastro h2 {
+    margin-top: 30px;
+
+}
+
+.analise-cadastro p {
+    margin: 20px 0;
+}
+
+.formulario {
+    width: 100%;
+}
+
+fieldset {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 8px;
+    
+    
+}
+legend {
+    background-color: darkblue;
+    color: white;
+    padding: 4px;
+    margin-left: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+    
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+
+}
+
+select {
+    padding: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}   
+
+button:hover {
+    background-color: rgb(1, 1, 61);
+}
+
+footer {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    color: darkblue;   
+}
+
+
+
