@@ -86,11 +86,9 @@ main {
 
 .container-cards {
     width: 100%;
-   
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
 }
 
 .cards {
@@ -289,5 +287,40 @@ footer {
     color: darkblue;   
 }
 
+@media screen and (max-width: 900px) {
+    .sobre {
+        width: 80%;
+    }
+
+    .container-cards {
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    .analise-cadastro {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    header h2 {
+        margin: 0;
+    }
+
+    header h2,
+    .banner h2 {
+        text-align: center;
+    }
+
+    .banner {
+        align-items: center;
+    }
+
+    .banner h2 {
+        margin: 0;
+        width: 90%;
+    }
+}
 
 
